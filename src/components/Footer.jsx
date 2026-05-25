@@ -1,11 +1,4 @@
 import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
-import {
-  Linkedin,
-  Twitter,
-  Facebook,
-  Instagram,
-  Youtube,
-} from './ui/SocialIcons';
 import Logo from './ui/Logo';
 import { navLinks } from '../data/content';
 
@@ -13,16 +6,8 @@ const productLinks = [
   'Tablets',
   'Capsules',
   'Syrups',
-  'Generic Medicines',
-  'Distribution',
-];
-
-const socials = [
-  { icon: Linkedin, label: 'LinkedIn', href: '#' },
-  { icon: Twitter, label: 'Twitter', href: '#' },
-  { icon: Facebook, label: 'Facebook', href: '#' },
-  { icon: Instagram, label: 'Instagram', href: '#' },
-  { icon: Youtube, label: 'YouTube', href: '#' },
+  'Injections',
+  'Protein Powder',
 ];
 
 export default function Footer() {
@@ -37,29 +22,29 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Logo variant="light" />
             <p className="mt-5 text-white/70 leading-relaxed max-w-md">
-              Jyke Pharmaceutical Pvt Ltd is committed to delivering safe,
-              effective and affordable medicines — engineered with science,
-              trusted by clinicians and accessible to all.
+              Founded in Bengaluru in 2011 and headquartered in Gwalior (MP) —
+              a pharmaceutical marketing and distribution company committed to
+              quality healthcare, ethical practices and lasting customer trust.
             </p>
 
             <ul className="mt-7 space-y-3 text-sm text-white/80">
-              <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 text-brand-300" /> Plot 14, Pharma City, MIDC, Mumbai 400072, India</li>
-              <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 text-brand-300" /> care@jykepharma.com</li>
-              <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 text-brand-300" /> +91 98765 43210</li>
-            </ul>
-
-            <div className="mt-7 flex flex-wrap gap-2">
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-white/80 hover:bg-white hover:text-brand-700 transition"
-                >
-                  <s.icon />
+              <li className="flex gap-3">
+                <MapPin className="h-4 w-4 mt-0.5 text-brand-300 flex-none" />
+                <span>71, River View Colony, Morar, Gwalior, Madhya Pradesh – 474006</span>
+              </li>
+              <li className="flex gap-3">
+                <Mail className="h-4 w-4 mt-0.5 text-brand-300 flex-none" />
+                <a href="mailto:jykepharmaceutical@gmail.com" className="hover:text-white transition-colors break-all">
+                  jykepharmaceutical@gmail.com
                 </a>
-              ))}
-            </div>
+              </li>
+              <li className="flex gap-3">
+                <Phone className="h-4 w-4 mt-0.5 text-brand-300 flex-none" />
+                <a href="tel:+919827242727" className="hover:text-white transition-colors">
+                  +91 98272 42727
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div className="lg:col-span-3">

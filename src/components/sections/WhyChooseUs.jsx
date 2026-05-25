@@ -5,7 +5,7 @@ import { fadeUp, stagger, viewportOnce } from '../../lib/motion';
 
 export default function WhyChooseUs() {
   return (
-    <section className="section bg-soft-gradient">
+    <section id="why" className="section bg-soft-gradient">
       <div className="container-px">
         <SectionHeading
           eyebrow="Why Choose Us"

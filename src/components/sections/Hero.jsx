@@ -7,6 +7,7 @@ import {
   HeartPulse,
   FlaskConical,
   Activity,
+  BadgeCheck,
 } from 'lucide-react';
 import { fadeUp, stagger } from '../../lib/motion';
 
@@ -29,7 +30,7 @@ export default function Hero() {
             className="lg:col-span-7"
           >
             <motion.span variants={fadeUp} className="chip">
-              <ShieldCheck className="h-3.5 w-3.5" /> GMP Certified · Trusted Pharma Partner
+              <ShieldCheck className="h-3.5 w-3.5" />Trusted Pharma Partner
             </motion.span>
 
             <motion.h1
@@ -41,9 +42,10 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="lede mt-6 max-w-xl">
-              At Jyke Pharmaceutical, we craft high-quality medicines and
-              healthcare solutions backed by rigorous science, certified
-              manufacturing and an unwavering commitment to patient well-being.
+              Founded in Bengaluru in 2011 and now headquartered in Gwalior,
+              Jyke Pharmaceutical is a pharma marketing and distribution
+              company committed to quality healthcare products, ethical
+              business practices and lasting customer trust.
             </motion.p>
 
             <motion.div
@@ -63,9 +65,9 @@ export default function Hero() {
               className="mt-12 grid grid-cols-3 max-w-md gap-6"
             >
               {[
-                ['15+', 'Years'],
-                ['500+', 'Products'],
-                ['100+', 'Clients'],
+                ['14+', 'Years'],
+                ['35+', 'Products'],
+                ['300+', 'Network'],
               ].map(([v, l]) => (
                 <div key={l}>
                   <p className="text-2xl md:text-3xl font-bold text-ink-900">
@@ -112,7 +114,7 @@ function HeroVisual() {
 
         <FloatingTile
           icon={Pill}
-          label="500+ SKUs"
+          label="35+ Products"
           className="top-6 left-6"
           delay={0}
         />
@@ -129,8 +131,8 @@ function HeroVisual() {
           delay={0.6}
         />
         <FloatingTile
-          icon={ShieldCheck}
-          label="GMP Certified"
+          icon={BadgeCheck}
+          label="FSSAI Licensed"
           className="bottom-6 right-6"
           delay={1.4}
         />

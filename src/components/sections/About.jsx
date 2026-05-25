@@ -19,14 +19,18 @@ export default function About() {
               <Sparkles className="h-3.5 w-3.5" /> About Jyke Pharmaceutical
             </motion.span>
             <motion.h2 variants={fadeUp} className="heading-lg mt-4">
-              Building a healthier tomorrow, one{' '}
-              <span className="grad-text">trusted medicine</span> at a time.
+    
+              <span className="grad-text">delivering quality healthcare</span> since 2011.
             </motion.h2>
             <motion.p variants={fadeUp} className="lede mt-5">
-              Jyke Pharmaceutical Pvt Ltd is a fast-growing healthcare company
-              dedicated to delivering safe, effective and affordable medicines.
-              From formulation to distribution, every step is engineered around
-              quality, compliance and patient outcomes.
+              Founded in Bengaluru in 2011, Jyke Pharmaceutical Pvt. Ltd. is
+              today headquartered in Gwalior (Madhya Pradesh), serving a
+              growing healthcare distribution network across UP, MP, Rajasthan
+              and beyond.
+              We are engaged in pharmaceutical marketing and distribution,
+              focused on delivering quality healthcare products with a deep
+              commitment to ethical business practices, customer satisfaction
+              and sustained growth across the pharma sector.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-8 grid sm:grid-cols-2 gap-4">
