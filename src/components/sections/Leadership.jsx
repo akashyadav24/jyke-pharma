@@ -114,14 +114,14 @@ function MdPhoto() {
   const [errored, setErrored] = useState(false);
 
   return (
-    <div className="relative h-full min-h-[420px]">
+    <div className="relative w-full max-w-md mx-auto aspect-[3/4] lg:max-w-none lg:aspect-auto lg:h-full lg:min-h-[520px]">
       <div className="absolute inset-0 rounded-[2rem] bg-brand-gradient shadow-glow rotate-2" />
       <div className="absolute inset-1.5 rounded-[1.85rem] bg-white shadow-card overflow-hidden">
         {!errored ? (
           <img
             src={md.photo}
             alt={`${md.name}, ${md.title} of Jyke Pharmaceutical`}
-            className="h-full w-full object-cover object-top"
+            className="h-full w-full object-cover object-[50%_30%]"
             onError={() => setErrored(true)}
             loading="lazy"
           />

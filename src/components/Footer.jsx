@@ -31,7 +31,7 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 text-brand-300 flex-none" />
                 <div>
-                  <p><span className="text-white/55">Registered:</span> 71, River View Colony, Morar, Gwalior, MP – 474006</p>
+                  <p><span className="text-white/55">Reg. Office:</span> 71, River View Colony, Morar, Gwalior, MP – 474006</p>
                   <p className="mt-1"><span className="text-white/55">Admin Office:</span> RJ-001, Purva Riviera, Marathalli, Varthur Old Airport Road, Bengaluru – 560037</p>
                 </div>
               </li>
