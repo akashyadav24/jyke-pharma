@@ -30,7 +30,7 @@ export default function Hero() {
             className="lg:col-span-7"
           >
             <motion.span variants={fadeUp} className="chip">
-              <ShieldCheck className="h-3.5 w-3.5" />Trusted Pharma Partner
+              <ShieldCheck className="h-3.5 w-3.5" />Trusted Pharma Company
             </motion.span>
 
             <motion.h1
@@ -42,7 +42,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p variants={fadeUp} className="lede mt-6 max-w-xl">
-              Founded in Bengaluru in 2011 and now headquartered in Gwalior,
+              Founded in Bengaluru in 2012 and now headquartered in Gwalior,
               Jyke Pharmaceutical is a pharma marketing and distribution
               company committed to quality healthcare products, ethical
               business practices and lasting customer trust.

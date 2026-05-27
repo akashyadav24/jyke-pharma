@@ -4,6 +4,7 @@ import ScrollToTop from './components/ui/ScrollToTop';
 import Hero from './components/sections/Hero';
 import Stats from './components/sections/Stats';
 import About from './components/sections/About';
+import Leadership from './components/sections/Leadership';
 import Products from './components/sections/Products';
 import WhyChooseUs from './components/sections/WhyChooseUs';
 import Quality from './components/sections/Quality';
@@ -18,6 +19,7 @@ export default function App() {
         <Hero />
         <Stats />
         <About />
+        <Leadership />
         <Products />
         <WhyChooseUs />
         <Quality />

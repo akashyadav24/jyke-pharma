@@ -126,9 +126,11 @@ export default function Quality() {
               exit={{ scale: 0.96, y: 8, opacity: 0 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-3xl max-h-[90vh] overflow-auto rounded-3xl bg-white shadow-card"
+              className={`relative w-full max-w-3xl rounded-3xl bg-white shadow-card overflow-hidden flex flex-col ${
+                activeCert.certUrl?.toLowerCase().endsWith('.pdf') ? 'h-[92vh]' : 'max-h-[90vh]'
+              }`}
             >
-              <div className="sticky top-0 z-10 flex items-center justify-between gap-3 px-5 py-3 bg-white/90 backdrop-blur border-b border-ink-100">
+              <div className="flex-none flex items-center justify-between gap-3 px-5 py-3 bg-white/90 backdrop-blur border-b border-ink-100">
                 <div className="min-w-0">
                   <p className="text-[11px] uppercase tracking-widest text-ink-500">Certificate</p>
                   <p className="font-semibold text-ink-900 truncate">{activeCert.title}</p>
@@ -142,14 +144,24 @@ export default function Quality() {
                   <X className="h-4 w-4" />
                 </button>
               </div>
-              <div className="p-3 sm:p-5 bg-ink-100">
-                <img
-                  src={activeCert.certUrl}
-                  alt={`${activeCert.title} certificate`}
-                  className="block w-full h-auto rounded-2xl shadow-soft bg-white"
-                  loading="lazy"
-                />
-              </div>
+              {activeCert.certUrl?.toLowerCase().endsWith('.pdf') ? (
+                <div className="flex-1 bg-ink-100">
+                  <iframe
+                    src={`${activeCert.certUrl}#toolbar=1&navpanes=0&view=FitH`}
+                    title={`${activeCert.title} certificate`}
+                    className="w-full h-full border-0 bg-white"
+                  />
+                </div>
+              ) : (
+                <div className="flex-1 p-3 sm:p-5 bg-ink-100 overflow-auto">
+                  <img
+                    src={activeCert.certUrl}
+                    alt={`${activeCert.title} certificate`}
+                    className="block w-full h-auto rounded-2xl shadow-soft bg-white"
+                    loading="lazy"
+                  />
+                </div>
+              )}
             </motion.div>
           </motion.div>
         )}

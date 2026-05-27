@@ -28,7 +28,7 @@ export const navLinks = [
 
 export const stats = [
   { value: 35, suffix: '+', label: 'Products', desc: 'Across therapeutic categories' },
-  { value: 300, suffix: '+', label: 'Distribution Network', desc: 'UP · MP · Rajasthan — Haryana coming soon' },
+  { value: 300, suffix: '+', label: 'Distribution Network', desc: 'MP · UP · Rajasthan — Haryana coming soon' },
   { value: 50, suffix: '+', label: 'Hospitals Served', desc: 'Trusted by healthcare institutions' },
   { value: 24, suffix: '/7', label: 'Support', desc: 'Always-on customer care' },
 ];
@@ -37,7 +37,7 @@ export const products = [
   {
     icon: Tablets,
     title: 'Tablets',
-    desc: 'A broad range of tablet formulations across therapeutic categories — sourced from GMP-certified partners under strict QC.',
+    desc: 'A broad range of tablet formulations across therapeutic categories — sourced from GMP-certified manufacturers under strict QC.',
     accent: 'from-brand-500 to-brand-700',
   },
   {
@@ -68,19 +68,9 @@ export const products = [
 
 export const productCatalogs = [
   {
-    title: 'Product Catalog — Vol. 1',
-    desc: 'Tablets, Capsules & oral solids range',
+    title: 'Jyke Pharma — Product Catalog',
+    desc: 'Full range of tablets, capsules, syrups, injections & nutraceuticals',
     url: '/products/JYKEPharma_product_list_1.pdf',
-  },
-  {
-    title: 'Product Catalog — Vol. 2',
-    desc: 'Syrups, Injections & liquid range',
-    url: '/products/product_list_2.pdf',
-  },
-  {
-    title: 'Product Catalog — Vol. 3',
-    desc: 'Protein supplements & nutraceuticals',
-    url: '/products/product_list_3.pdf',
   },
 ];
 
@@ -103,17 +93,17 @@ export const whyChooseUs = [
   {
     icon: Timer,
     title: 'Reliable Supply',
-    desc: 'On-time dispatch across our 300+ strong distribution network — predictable, uninterrupted supply for every partner.',
+    desc: 'On-time dispatch across our 300+ strong distribution network — predictable, uninterrupted supply for every customer.',
   },
   {
     icon: Briefcase,
     title: 'Industry Expertise',
-    desc: 'Over a decade of pharma marketing and distribution experience across UP, MP, Rajasthan and beyond.',
+    desc: 'Over a decade of pharma marketing and distribution experience across MP, UP, Rajasthan and beyond.',
   },
   {
     icon: Users,
     title: 'Customer Commitment',
-    desc: 'Dedicated partner success teams and responsive after-sales support — we treat every relationship as long-term.',
+    desc: 'Dedicated customer success teams and responsive after-sales support — we treat every relationship as long-term.',
   },
 ];
 
@@ -121,8 +111,11 @@ export const certifications = [
   {
     icon: BadgeCheck,
     title: 'Drug License',
-    desc: 'Authorized to market and distribute pharmaceutical products under the applicable Indian Drugs & Cosmetics regulations.',
-    issuer: 'Drugs Control Authority',
+    number: '20B/05/57/2012 · 21B/06/57/2012',
+    validity: 'Valid till 29 Jan 2027',
+    issuer: 'Food and Drugs Administration, Madhya Pradesh',
+    desc: 'Retail drug sale licenses under Forms 20-B and 21-B of the Drugs & Cosmetics Rules — authorized to sell pharmaceutical products including scheduled drugs.',
+    certUrl: '/certifications/drug_licance.jpg',
   },
   {
     icon: FileCheck2,
@@ -143,8 +136,8 @@ export const aboutHighlights = [
 
 export const companyValues = [
   { title: 'Quality', desc: 'Uncompromising standards in every product we market and distribute.' },
-  { title: 'Ethical Practices', desc: 'Transparent dealings with stockists, doctors and partners.' },
-  { title: 'Customer Satisfaction', desc: 'Patient outcomes and partner trust at the centre of every decision.' },
+  { title: 'Ethical Practices', desc: 'Transparent dealings with stockists, doctors and customers.' },
+  { title: 'Customer Satisfaction', desc: 'Patient outcomes and customer trust at the centre of every decision.' },
   { title: 'Sustained Growth', desc: 'Steady, responsible expansion across the Indian pharma sector.' },
 ];
 
@@ -159,7 +152,7 @@ export const contactCards = [
     icon: 'mail',
     title: 'Email',
     primary: 'jykepharmaceutical@gmail.com',
-    secondary: 'For enquiries, partnerships & support',
+    secondary: 'For enquiries, business & support',
   },
   {
     icon: 'pin',

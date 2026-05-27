@@ -20,12 +20,12 @@ export default function About() {
             </motion.span>
             <motion.h2 variants={fadeUp} className="heading-lg mt-4">
     
-              <span className="grad-text">delivering quality healthcare</span> since 2011.
+              <span className="grad-text">delivering quality healthcare</span> since 2012.
             </motion.h2>
             <motion.p variants={fadeUp} className="lede mt-5">
-              Founded in Bengaluru in 2011, Jyke Pharmaceutical Pvt. Ltd. is
+              Founded in Bengaluru in 2012, Jyke Pharmaceutical Pvt. Ltd. is
               today headquartered in Gwalior (Madhya Pradesh), serving a
-              growing healthcare distribution network across UP, MP, Rajasthan
+              growing healthcare distribution network across MP, UP, Rajasthan
               and beyond.
               We are engaged in pharmaceutical marketing and distribution,
               focused on delivering quality healthcare products with a deep
@@ -42,7 +42,7 @@ export default function About() {
               <ValueBlock
                 icon={Eye}
                 title="Our Vision"
-                desc="To be a globally trusted pharmaceutical partner advancing healthier lives in every community."
+                desc="To be a globally trusted pharmaceutical company advancing healthier lives in every community."
               />
             </motion.div>
 

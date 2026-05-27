@@ -23,7 +23,7 @@ export default function CtaBanner() {
                 variants={fadeUp}
                 className="inline-flex items-center gap-2 rounded-full bg-white/15 text-xs font-semibold uppercase tracking-[0.18em] px-3 py-1 border border-white/25"
               >
-                <MessageCircle className="h-3.5 w-3.5" /> Partner with Jyke
+                <MessageCircle className="h-3.5 w-3.5" /> Connect with Jyke
               </motion.span>
               <motion.h2
                 variants={fadeUp}
@@ -40,7 +40,7 @@ export default function CtaBanner() {
               >
                 Whether you’re a hospital, distributor or healthcare brand —
                 let’s build a healthier future together with reliable supply,
-                certified manufacturing and partner-first service.
+                certified manufacturing and customer-first service.
               </motion.p>
             </div>
             <motion.div

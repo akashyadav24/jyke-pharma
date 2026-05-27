@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <Logo variant="light" />
             <p className="mt-5 text-white/70 leading-relaxed max-w-md">
-              Founded in Bengaluru in 2011 and headquartered in Gwalior (MP) —
+              Founded in Bengaluru in 2012 and headquartered in Gwalior (MP) —
               a pharmaceutical marketing and distribution company committed to
               quality healthcare, ethical practices and lasting customer trust.
             </p>

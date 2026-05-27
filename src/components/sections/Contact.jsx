@@ -74,7 +74,7 @@ export default function Contact() {
           eyebrow="Get In Touch"
           title="Let’s talk about"
           highlight="healthier outcomes"
-          description="Reach out for product enquiries, distribution partnerships, regulatory support or institutional sales."
+          description="Reach out for product enquiries, distribution opportunities, regulatory support or institutional sales."
         />
 
         <motion.div
