@@ -30,7 +30,10 @@ export default function Footer() {
             <ul className="mt-7 space-y-3 text-sm text-white/80">
               <li className="flex gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 text-brand-300 flex-none" />
-                <span>71, River View Colony, Morar, Gwalior, Madhya Pradesh – 474006</span>
+                <div>
+                  <p><span className="text-white/55">Registered:</span> 71, River View Colony, Morar, Gwalior, MP – 474006</p>
+                  <p className="mt-1"><span className="text-white/55">Admin Office:</span> RJ-001, Purva Riviera, Marathalli, Varthur Old Airport Road, Bengaluru – 560037</p>
+                </div>
               </li>
               <li className="flex gap-3">
                 <Mail className="h-4 w-4 mt-0.5 text-brand-300 flex-none" />
@@ -40,9 +43,14 @@ export default function Footer() {
               </li>
               <li className="flex gap-3">
                 <Phone className="h-4 w-4 mt-0.5 text-brand-300 flex-none" />
-                <a href="tel:+919827242727" className="hover:text-white transition-colors">
-                  +91 98272 42727
-                </a>
+                <div>
+                  <a href="tel:+9107514012727" className="hover:text-white transition-colors block">
+                    0751 - 4012727
+                  </a>
+                  <a href="tel:+919827242727" className="hover:text-white transition-colors block">
+                    <span className="text-white/55 mr-1.5">Mobile:</span>+91 98272 42727
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

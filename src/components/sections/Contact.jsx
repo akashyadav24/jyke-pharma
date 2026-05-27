@@ -4,6 +4,7 @@ import {
   Phone,
   Mail,
   MapPin,
+  Building2,
   Send,
   Clock,
   CheckCircle2,
@@ -15,7 +16,7 @@ import SectionHeading from '../ui/SectionHeading';
 import { contactCards } from '../../data/content';
 import { fadeUp, stagger, viewportOnce } from '../../lib/motion';
 
-const ICONS = { phone: Phone, mail: Mail, pin: MapPin };
+const ICONS = { phone: Phone, mail: Mail, pin: MapPin, building: Building2 };
 
 const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY;
 
@@ -82,13 +83,13 @@ export default function Contact() {
           whileInView="visible"
           viewport={viewportOnce}
           variants={stagger}
-          className="mt-14 grid lg:grid-cols-3 gap-5"
+          className="mt-14 grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5"
         >
           {contactCards.map((c, i) => {
             const Icon = ICONS[c.icon];
             const href =
               c.icon === 'phone'
-                ? `tel:${c.primary.replace(/\s+/g, '')}`
+                ? `tel:${c.primary.replace(/[\s-]+/g, '')}`
                 : c.icon === 'mail'
                 ? `mailto:${c.primary}`
                 : null;
@@ -112,6 +113,17 @@ export default function Contact() {
                 >
                   {c.primary}
                 </Primary>
+                {c.extra && (
+                  <a
+                    href={`tel:${c.extra.replace(/[\s-]+/g, '')}`}
+                    className="mt-0.5 block text-sm font-medium text-ink-700 hover:text-brand-700 transition-colors"
+                  >
+                    {c.extraLabel && (
+                      <span className="text-ink-400 mr-1.5">{c.extraLabel}:</span>
+                    )}
+                    {c.extra}
+                  </a>
+                )}
                 <p className="mt-1 text-sm text-ink-500">{c.secondary}</p>
               </motion.div>
             );

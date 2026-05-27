@@ -48,7 +48,7 @@ export default function Quality() {
           <motion.p variants={fadeUp} className="mt-5 text-base md:text-lg text-white/75 leading-relaxed">
             Jyke Pharmaceutical operates under the regulatory licenses required
             to market and distribute pharmaceutical and nutraceutical products
-            in India — every shipment backed by valid documentation and
+            in India — every consignment backed by valid documentation and
             traceable compliance.
           </motion.p>
         </motion.div>

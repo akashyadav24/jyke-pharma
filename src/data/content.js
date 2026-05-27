@@ -68,9 +68,29 @@ export const products = [
 
 export const productCatalogs = [
   {
-    title: 'Jyke Pharma — Product Catalog',
-    desc: 'Full range of tablets, capsules, syrups, injections & nutraceuticals',
-    url: '/products/JYKEPharma_product_list_1.pdf',
+    title: 'Product Catalog — Vol. 1',
+    desc: 'Tablets and capsules range',
+    url: '/products/product_list_2.pdf',
+    type: 'pdf',
+  },
+  {
+    title: 'Product Catalog — Vol. 2',
+    desc: 'Syrups, injections & nutraceuticals range',
+    url: '/products/product_list_3.pdf',
+    type: 'pdf',
+  },
+];
+
+export const upcomingProducts = [
+  {
+    title: 'JYBUMIN',
+    desc: 'Egg Albumen Protein Dietary Supplement · Vanilla · 200 gm',
+    image: '/products/jybumin.png',
+  },
+  {
+    title: 'CALANJ Tablets',
+    desc: 'Calcium Citrate, Magnesium, L-Carnitine, Vitamin E & Multivitamins',
+    image: '/products/calanj.png',
   },
 ];
 
@@ -114,7 +134,7 @@ export const certifications = [
     number: '20B/05/57/2012 · 21B/06/57/2012',
     validity: 'Valid till 29 Jan 2027',
     issuer: 'Food and Drugs Administration, Madhya Pradesh',
-    desc: 'Retail drug sale licenses under Forms 20-B and 21-B of the Drugs & Cosmetics Rules — authorized to sell pharmaceutical products including scheduled drugs.',
+    desc: 'Wholesale drug sale licenses under Forms 20-B and 21-B of the Drugs & Cosmetics Rules — authorized to sell pharmaceutical products including scheduled drugs.',
     certUrl: '/certifications/drug_licance.jpg',
   },
   {
@@ -145,8 +165,10 @@ export const contactCards = [
   {
     icon: 'phone',
     title: 'Phone',
-    primary: '+91 98272 42727',
-    secondary: 'Mon – Sat, 9:00 – 18:00 IST',
+    primary: '0751 - 4012727',
+    extra: '+91 98272 42727',
+    extraLabel: 'Mobile',
+    secondary: 'Mon – Sat, 10:30 – 18:30 IST',
   },
   {
     icon: 'mail',
@@ -159,6 +181,12 @@ export const contactCards = [
     title: 'Registered Address',
     primary: '71, River View Colony, Morar',
     secondary: 'Gwalior, Madhya Pradesh – 474006',
+  },
+  {
+    icon: 'building',
+    title: 'Admin Office',
+    primary: 'RJ-001, Purva Riviera, Marathalli',
+    secondary: 'Varthur Old Airport Road, Bengaluru – 560037',
   },
 ];
 
